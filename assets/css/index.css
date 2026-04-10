@@ -10,8 +10,8 @@ html {
   height: 100svh;
 }
 :root {
-  --primary-color: radial-gradient(
-    circle farthest-corner at center,
+  --primary-color: linear-gradient(
+    to bottom,
     rgb(241, 239, 255),
     rgb(242, 239, 255)
   );
@@ -24,7 +24,6 @@ body {
 }
 body::-webkit-scrollbar {
   display: none;
- 
 }
 
 header {
@@ -37,14 +36,13 @@ header {
   font-weight: 700;
   color: var(--btn-color);
 }
-.header-content .menu{
+.header-content .menu {
   display: none;
 }
 .container {
   max-width: 1024px;
   margin-inline: auto;
   padding: 0 0.5rem;
-  
 }
 .header-content {
   display: flex;
@@ -81,8 +79,6 @@ header {
 .nav-links li a:hover {
   color: var(--btn-color);
 }
-
-
 
 .hero-btn {
   display: flex;
@@ -172,7 +168,6 @@ header {
   width: 50rem;
   transform: translate(50%, -50%);
   z-index: -1;
-  
 }
 .hero-right .heart {
   position: absolute;
@@ -197,7 +192,6 @@ header {
 }
 .benefits {
   margin: 2rem 0;
-
 }
 .benefits-content {
   display: flex;
@@ -205,7 +199,6 @@ header {
   align-items: center;
   justify-content: center;
   gap: 2.6rem;
- 
 }
 .benefits-title {
   font-weight: 700;
@@ -226,8 +219,6 @@ header {
   display: flex;
   width: 100%;
   gap: 2rem;
-  
- 
 }
 .benefits-card .card {
   display: flex;
@@ -242,12 +233,12 @@ header {
   padding: 4rem 2rem;
 }
 .benefits-card .card:hover {
-  box-shadow: .2rem .2rem 2rem var(--btn-color);
+  box-shadow: 0.2rem 0.2rem 2rem var(--btn-color);
   transform: scale(1.05);
 }
-.benefits-card .card .card-header{
-    width: 100%;
-    height: 60%;
+.benefits-card .card .card-header {
+  width: 100%;
+  height: 60%;
 }
 .benefits-card .card img {
   width: 5rem;
@@ -317,30 +308,28 @@ header {
   font-size: 1.5rem;
   width: 30%;
   text-align: center;
-
 }
 .pricing-card {
   display: flex;
   gap: 2rem;
   width: 100%;
-
 }
 .pricing-card .card {
-    display: flex;
-    width: 30%;
-    height: 35rem;
-    flex-direction: column;
-    border: 0.1rem solid #fff;
-    border-radius: 0.4rem;
-    background-color: white;
-    transition: 1s ease;
-  }
+  display: flex;
+  width: 30%;
+  height: 35rem;
+  flex-direction: column;
+  border: 0.1rem solid #fff;
+  border-radius: 0.4rem;
+  background-color: white;
+  transition: 1s ease;
+}
 
 .pricing-card .card:hover {
-  box-shadow: .1rem .1rem 2rem var(--btn-color);
+  box-shadow: 0.1rem 0.1rem 2rem var(--btn-color);
   transform: scale(1.05);
 }
-.pricing-card .card-header{
+.pricing-card .card-header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -348,115 +337,114 @@ header {
   width: 100%;
   align-items: center;
 }
-.pricing-card .card:nth-child(even) .card-header{
-    background-color: var(--btn-color);
-    color: #fff;
-   
+.pricing-card .card:nth-child(even) .card-header {
+  background-color: var(--btn-color);
+  color: #fff;
 }
-.pricing-card .card-header h3{
+.pricing-card .card-header h3 {
   font-size: 2.4rem;
   margin-top: 1rem;
 }
-.pricing-card .card-header h4{
-    font-size: 1.8rem;
-    font-weight: normal;
-   
+.pricing-card .card-header h4 {
+  font-size: 1.8rem;
+  font-weight: normal;
 }
-.pricing-card .card-header span{
-    font-size: 2rem;
-    font-weight: bold;
-   
+.pricing-card .card-header span {
+  font-size: 2rem;
+  font-weight: bold;
 }
 .pricing-card .card-body {
   border-top: 0.1rem solid gray;
   display: flex;
   flex-direction: column;
   align-items: center;
-    gap: 3rem;
-    justify-content: space-between;
+  gap: 3rem;
+  justify-content: space-between;
 }
-.pricing-card .card-body ul li{
-    margin-top: 1rem;
-    font-size: 1.4rem;
+.pricing-card .card-body ul li {
+  margin-top: 1rem;
+  font-size: 1.4rem;
 }
 .pricing-card .card-body ul li::marker {
   font-weight: bold;
 }
 .pricing-card .card:nth-child(even) .card-body ul li::marker {
-    color: var(--btn-color);
-  }
+  color: var(--btn-color);
+}
 .testimonials {
   margin: 4rem 0;
 }
 .testimonials-content {
-    display: flex;
-    flex-direction: column;
-   
-    justify-content: center;
-    gap: 2.6rem;
-  }
-  .testimonials-title {
-    font-weight: 700;
-    position: relative;
-  }
-  .testimonials-title h2 {
-    font-size: 4rem;
-  }
-  .testimonials-title img {
-    width: 18rem;
-    position: absolute;
-    left: 1rem;
-  }
-  .testimonials-card{
-    display: flex;
-    gap: 5rem;
+  display: flex;
+  flex-direction: column;
 
-    flex: 1 1 30rem;
-  }
-  .testimonials-card .card {
-    display: flex;
-    flex-direction: column;
-    width: 30rem;
-    height: 15rem;
-    gap: 1.6rem;
-  
-    padding: 2rem;
-    transition: 1s ease;
-  }
-  .testimonials-card .card p,.testimonials-card .card h3,.testimonials-card .card span{
-    font-size: 1.4rem;
-  }
-    .testimonials-card .card-second {
-     margin-top: -2rem;
-    }
-   .testimonials-card .card .button{
-      display: flex;
-      width: 90px;
-    
-      justify-content: center;
-      gap: 1rem;
-    }
-    .btn1{
-      background-color: var(--primary-color);
-      width: 25%;
-      border: .1rem solid gray;
-      border-radius: 1rem;
-      color: transparent;
-    }
-    .btn2{
-      background-color: var(--btn-color);
-      width: 50%;
-      border-radius: 1rem;
-    }
-    .btn3{
-      background-color: var(--primary-color);
-      width: 25%;
-      border: .1rem solid gray;
-      border-radius: 1rem;
-    }
-  footer{
-    padding: 5rem 0;
-  }
+  justify-content: center;
+  gap: 2.6rem;
+}
+.testimonials-title {
+  font-weight: 700;
+  position: relative;
+}
+.testimonials-title h2 {
+  font-size: 4rem;
+}
+.testimonials-title img {
+  width: 18rem;
+  position: absolute;
+  left: 1rem;
+}
+.testimonials-card {
+  display: flex;
+  gap: 5rem;
+
+  flex: 1 1 30rem;
+}
+.testimonials-card .card {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: 15rem;
+  gap: 1.6rem;
+
+  padding: 2rem;
+  transition: 1s ease;
+}
+.testimonials-card .card p,
+.testimonials-card .card h3,
+.testimonials-card .card span {
+  font-size: 1.4rem;
+}
+.testimonials-card .card-second {
+  margin-top: -2rem;
+}
+.testimonials-card .card .button {
+  display: flex;
+  width: 90px;
+
+  justify-content: center;
+  gap: 1rem;
+}
+.btn1 {
+  background-color: var(--primary-color);
+  width: 25%;
+  border: 0.1rem solid gray;
+  border-radius: 1rem;
+  color: transparent;
+}
+.btn2 {
+  background-color: var(--btn-color);
+  width: 50%;
+  border-radius: 1rem;
+}
+.btn3 {
+  background-color: var(--primary-color);
+  width: 25%;
+  border: 0.1rem solid gray;
+  border-radius: 1rem;
+}
+footer {
+  padding: 5rem 0;
+}
 .footer-content {
   display: flex;
   flex-direction: column;
@@ -496,8 +484,7 @@ header {
   .nav-links li a:hover {
     color: var(--btn-color);
   }
-  
-  
+
   width: 100%;
   font-size: 1.3rem;
 }
@@ -538,97 +525,90 @@ header {
 .footer-content li a:hover {
   color: var(--btn-color);
 }
-.footer-four{
+.footer-four {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.footer-four .footer-box{
+.footer-four .footer-box {
   position: relative;
-    background-color: white;
-    padding: .4rem 0 .4rem 1.5rem;
-    width: 250px;
-    height: 50px;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-   
+  background-color: white;
+  padding: 0.4rem 0 0.4rem 1.5rem;
+  width: 250px;
+  height: 50px;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
-.footer-box input{
-    position: absolute;
-    padding: 0 7rem 0 0;
-    width: 80%;
-    height: 80%;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    
- 
- 
+.footer-box input {
+  position: absolute;
+  padding: 0 7rem 0 0;
+  width: 80%;
+  height: 80%;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
-.footer-box button{
-    position: absolute;
-    top:5px;
-    border: none;
-    color: white;
-    height: 80%;
-    right: 5px;
-    border-radius: .5rem;
-  
-    padding: 1rem 2rem;
-    background:var(--btn-color);
+.footer-box button {
+  position: absolute;
+  top: 5px;
+  border: none;
+  color: white;
+  height: 80%;
+  right: 5px;
+  border-radius: 0.5rem;
+
+  padding: 1rem 2rem;
+  background: var(--btn-color);
 }
-.footer-box .icon{
+.footer-box .icon {
   display: flex;
   justify-content: center;
   font-size: 2rem;
 }
 
 .footer-four .social-icons {
-  display:flex;
+  display: flex;
   gap: 1rem;
   align-items: center;
 }
 .footer-four .social-icons .i {
-  border: .1rem solid black;
-  padding: .5rem;
+  border: 0.1rem solid black;
+  padding: 0.5rem;
   border-radius: 50%;
 }
 
-@media screen and (min-width:2096px){
-  html{
-   font-size: 100%;
+@media screen and (min-width: 2096px) {
+  html {
+    font-size: 100%;
   }
-  .hero-left img{
-   left: 0;
-   top: 8rem;
+  .hero-left img {
+    left: 0;
+    top: 8rem;
   }
-  .hero-left .vector{
-   left: 32rem;
+  .hero-left .vector {
+    left: 32rem;
   }
-  .hero-right{
-  right: 5rem;
-  top: 2rem;
-   
+  .hero-right {
+    right: 5rem;
+    top: 2rem;
   }
-   .hero-right .location{
-     top: -15rem;
-     z-index: 2;
-   }
-   .hero-right .girl{
-     object-fit: cover;
-     right: 15rem;
-   }
-   .container{
-     max-width: 1536px;
-     margin: 0 auto;
-   }
-  .benefits{
+  .hero-right .location {
+    top: -15rem;
+    z-index: 2;
+  }
+  .hero-right .girl {
+    object-fit: cover;
+    right: 15rem;
+  }
+  .container {
+    max-width: 1536px;
+    margin: 0 auto;
+  }
+  .benefits {
     margin: -10rem 0 0 0;
   }
- 
- } 
+}
 @media (max-width: 1024px) {
-
   .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -637,11 +617,11 @@ header {
   .hero-title {
     font-size: 3rem;
   }
-  .hero-title img{
+  .hero-title img {
     left: 8rem;
     top: 10rem;
   }
-  .hero-right .location{
+  .hero-right .location {
     right: 1.5rem;
   }
 
@@ -650,17 +630,15 @@ header {
     gap: 1.5rem;
   }
 
-  .testimonials-content .card p,.testimonials-content .card span{
-   width: 20rem;
+  .testimonials-content .card p,
+  .testimonials-content .card span {
+    width: 20rem;
   }
-  footer{
+  footer {
     margin: 10rem 0 0 0;
   }
 }
 @media (max-width: 768px) {
-
-
-
   .container {
     max-width: 700px;
   }
@@ -674,7 +652,7 @@ header {
     display: block;
     font-size: 5rem;
   }
-  .hero-title img{
+  .hero-title img {
     right: 10rem;
   }
 
@@ -703,7 +681,6 @@ header {
   }
 }
 @media (max-width: 640px) {
-
   html {
     font-size: 55%;
   }
@@ -722,7 +699,6 @@ header {
   }
 }
 @media (max-width: 476px) {
-
   html {
     font-size: 50%;
   }
@@ -731,7 +707,7 @@ header {
     font-size: 2.2rem;
     line-height: 1.3;
   }
-  .hero-title img{
+  .hero-title img {
     left: 0;
     top: 8.5rem;
   }
@@ -739,25 +715,23 @@ header {
   .hero-left p {
     font-size: 1.4rem;
   }
-  
 
   .hero-btn {
-  width: 70%;
+    width: 70%;
     gap: 1.5rem;
   }
-  .hero-content{
+  .hero-content {
     display: flex;
     flex-direction: column;
     gap: 4rem;
-
   }
 
-  .hero-right .girl{
+  .hero-right .girl {
     top: 20rem;
     right: -8rem;
     background: url(../images/round.png) no-repeat center/cover;
   }
-  .hero-right .location{
+  .hero-right .location {
     top: -20rem;
     right: -6rem;
     z-index: 2;
@@ -767,71 +741,63 @@ header {
     width: 100%;
     font-size: 1.4rem;
   }
-.benefits{
-  margin: 48rem 0 0 0;
-}
-.benefits-title img{
-  top: 6.5rem;
-  left: 0;
-}
-.benefits-card{
-  gap: 5rem;
-}
-.benefits-title img{
-  top:5.5rem;
-}
+  .benefits {
+    margin: 48rem 0 0 0;
+  }
+  .benefits-title img {
+    top: 6.5rem;
+    left: 0;
+  }
+  .benefits-card {
+    gap: 5rem;
+  }
+  .benefits-title img {
+    top: 5.5rem;
+  }
 
-  
-.fitness-content{
-  display: flex;
-  flex-direction: column;
-}
- .fitness-left img{
-  width: 100%;
-  object-position: center;
- }
+  .fitness-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .fitness-left img {
+    width: 100%;
+    object-position: center;
+  }
   .benefits-content p,
   .pricing-content p {
     font-size: 1.4rem;
   }
-footer{
-  margin: 25rem 0 0 0;
-}
+  footer {
+    margin: 25rem 0 0 0;
+  }
   .footer-four .footer-box {
     width: 100%;
-    padding: .5rem;
+    padding: 0.5rem;
   }
-  .footer-box input{
-   
+  .footer-box input {
     padding: 0 1rem 0 0;
- }
- .footer-box input::placeholder{
-  font-size: 1rem;
- }
-.footer-box button{
-   
+  }
+  .footer-box input::placeholder {
+    font-size: 1rem;
+  }
+  .footer-box button {
     padding: 1.05rem;
-    
-}
-.pricing-card{
-  gap: 3rem;
-}
-.pricing-card .card-body{
-  padding: 0 4rem;
-
-
-}
-.pricing-card .card{
-  padding:0 0 2rem 0;
-
-}
-.pricing-card .card-body ul li{
-  font-size: 2.5rem;
-}
-.testimonials-card{
-  display: flex;
-  flex-direction: column;
-  gap: 28rem;
-
-}
+  }
+  .pricing-card {
+    gap: 3rem;
+  }
+  .pricing-card .card-body {
+    padding: 0 4rem;
+  }
+  .pricing-card .card {
+    padding: 0 0 2rem 0;
+  }
+  .pricing-card .card-body ul li {
+    font-size: 2.5rem;
+  }
+  .testimonials-card {
+    display: flex;
+    flex-direction: column;
+    gap: 28rem;
+  }
 }
