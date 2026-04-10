@@ -428,6 +428,31 @@ header {
     .testimonials-card .card-second {
      margin-top: -2rem;
     }
+   .testimonials-card .card .button{
+      display: flex;
+      width: 90px;
+    
+      justify-content: center;
+      gap: 1rem;
+    }
+    .btn1{
+      background-color: var(--primary-color);
+      width: 25%;
+      border: .1rem solid gray;
+      border-radius: 1rem;
+      color: transparent;
+    }
+    .btn2{
+      background-color: var(--btn-color);
+      width: 50%;
+      border-radius: 1rem;
+    }
+    .btn3{
+      background-color: var(--primary-color);
+      width: 25%;
+      border: .1rem solid gray;
+      border-radius: 1rem;
+    }
   footer{
     padding: 5rem 0;
   }
@@ -567,40 +592,7 @@ header {
   padding: .5rem;
   border-radius: 50%;
 }
-/* 
-@media screen and (min-width:200px){
-  html{
-    font-size: 0.25%;
-    overflow-x: hidden;
-  }
-  .container{
-    max-width: 576px;
-    margin: 0 auto;
-  }
-  .header-content .menu{
-    display: block;
-  }
-  .header-content nav{
-    display: none;
-  }
-  .header-content .btn{
-    display: none;
-  }
-}
-@media screen and (min-width:640px){
-   html{
-    font-size: 62.5%;
-   }
-}
-@media screen and (min-width:768px){
-   
-}
-@media screen and (min-width:1024px){
-   
-}
-@media screen and (min-width:1280px){
-   
-} */
+
 @media screen and (min-width:2096px){
   html{
    font-size: 100%;
@@ -813,5 +805,24 @@ footer{
    
     padding: 1.05rem;
     
+}
+.pricing-card{
+  gap: 3rem;
+}
+.pricing-card .card-body{
+  padding: 0 2rem;
+
+}
+.pricing-card .card{
+  padding:0 0 2rem 0;
+}
+.pricing-card .card-body ul li{
+  font-size: 2.5rem;
+}
+.testimonials-card{
+  display: flex;
+  flex-direction: column;
+  gap: 28rem;
+
 }
 }
