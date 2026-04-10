@@ -822,6 +822,7 @@ footer{
 }
 .pricing-card .card{
   padding:0 0 2rem 0;
+  align-items: start;
 }
 .pricing-card .card-body ul li{
   font-size: 2.5rem;
