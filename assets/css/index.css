@@ -337,7 +337,7 @@ header {
   }
 
 .pricing-card .card:hover {
-  box-shadow: 1rem 1rem 5rem var(--btn-color);
+  box-shadow: .1rem .1rem 2rem var(--btn-color);
   transform: scale(1.05);
 }
 .pricing-card .card-header{
