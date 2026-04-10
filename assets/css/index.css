@@ -602,8 +602,22 @@ header {
    
 } */
 @media screen and (min-width:1280px){
+ html{
+  font-size: 100%;
+ }
+ .hero-left img{
+  left: 0;
+  top: 8rem;
+ }
+ .hero-left .vector{
+  left: 32rem;
+ }
   .hero-right .location{
     top: -15rem;
+  }
+  .container{
+    max-width: 1536px;
+    margin: 0 auto;
   }
 
 } 
