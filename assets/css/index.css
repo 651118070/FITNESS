@@ -601,26 +601,39 @@ header {
 @media screen and (min-width:1280px){
    
 } */
-@media screen and (min-width:1280px){
- html{
-  font-size: 100%;
- }
- .hero-left img{
-  left: 0;
-  top: 8rem;
- }
- .hero-left .vector{
-  left: 32rem;
- }
-  .hero-right .location{
-    top: -15rem;
+@media screen and (min-width:2096px){
+  html{
+   font-size: 100%;
   }
-  .container{
-    max-width: 1536px;
-    margin: 0 auto;
+  .hero-left img{
+   left: 0;
+   top: 8rem;
   }
-
-} 
+  .hero-left .vector{
+   left: 32rem;
+  }
+  .hero-right{
+  right: 5rem;
+  top: 2rem;
+   
+  }
+   .hero-right .location{
+     top: -15rem;
+     z-index: 2;
+   }
+   .hero-right .girl{
+     object-fit: cover;
+     right: 15rem;
+   }
+   .container{
+     max-width: 1536px;
+     margin: 0 auto;
+   }
+  .benefits{
+    margin: -10rem 0 0 0;
+  }
+ 
+ } 
 @media (max-width: 1024px) {
 
   .container {
@@ -721,7 +734,6 @@ header {
     font-size: 50%;
   }
 
-  /* HERO */
   .hero-title {
     font-size: 2.2rem;
     line-height: 1.3;
